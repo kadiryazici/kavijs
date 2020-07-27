@@ -1,11 +1,11 @@
 # **Kavi.js is built to create dynamic elements easily** 
 Use this library in <ins>HEAD</ins> tag.<br>
-kavi.js is ES5 version compiled by babel.<br>
-kavi.original.es6.js ES6 version which is original one.
+`kavi.js` is ES5 version compiled by babel.<br>
+`kavi.original.es6.js` is ES6 version which is original one.
 
-Kavi is a class that takes two arguments and returns an <ins>HTML Element</ins>. <br>
+Kavi is a class that takes two arguments and returns an <ins>`HTML Element`</ins>. <br>
 
->First one is HTML Element Tag as <ins>STRING</ins>. You can create custom elements as well.
+>First one is HTML Element Tag as <ins>`STRING`</ins>. You can create custom elements as well.
 
 >Second one is Object of Options. Options can contain
 > - **attributes**:  Object <br>- Attribute name: Attribute Value <br><br> 
@@ -30,10 +30,14 @@ Kavi is a class that takes two arguments and returns an <ins>HTML Element</ins>.
 	</style>
 </div>
 
-<!-- even img, believe me it works.-->
+<!-- even img/input. believe me it works. because it has no children. Style does not count as an element here, so img/imput works as expected-->
 <img data-kavi-12345> 
-	<style>...</style>
+	<style data-kavi-12345>...</style>
 </img>
+
+<input data-kavi-17421 type="text" id="helloha"> 
+	<style data-kavi-12345>...</style>
+</input>
 ```
 
 
