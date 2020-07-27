@@ -72,7 +72,7 @@ const div = new Kavi("div", {
 	style: {
 		boxShadow: "0px 0px 20px -5px #202020",
 		padding: "20px",
-		borderRadius: "20px"
+		"border-radius": "20px"
 	},
 	text: "Hi, i am a div"
 })
@@ -90,7 +90,7 @@ new Kavi("div", {
 	style: {
 		boxShadow: "0px 0px 20px -5px #202020",
 		padding: "20px",
-		borderRadius: "20px"
+		"border-radius": "20px"
 	},
 	text: "I have child",
 	children: {
@@ -118,7 +118,7 @@ new KaviDiv({
 	style: {
 		boxShadow: "0px 0px 20px -5px #202020",
 		padding: "20px",
-		borderRadius: "20px"
+		"border-radius": "20px"
 	},
 	on: {
 		click(event, element) {
