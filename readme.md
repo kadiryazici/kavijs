@@ -211,16 +211,18 @@ Bu kütüphaneyi <ins>HEAD</ins> etiketinin içinde kullanın.<br>
 
 Kavi bir "class"dır, iki tane argüman alır ve geriye <ins>`HTML Elemanı`</ins> döndürür. <br>
 
->İlk eleman html etiketidir ve sadece <ins>`STRING`</ins> kabul eder. Özel etikete sahip elemanlar da oluşturabilir (\<selamlar>\</selamlar>) gibi.
+<div style="border-left: 2px solid black; border-radius:5px;padding:10px; color: #202020; background-color: rgb(200,200,200)">
+İlk eleman html etiketidir ve sadece <ins>`STRING`</ins> kabul eder. Özel etikete sahip elemanlar da oluşturabilir (\<selamlar>\</selamlar>) gibi.
 
->İkinci argüman ise bir "OBJECT"dir ve özellikler taşır. Bu özellikler ise;
-> - **attributes**:  Object <br>- Attribute ismi: Değer <br><br> 
-> - **style**: Object: <br> - styleName: Değer<br><br>
-> - **text**: String //Inner Text
-> - **html**: String //Inner HTML <br><br>
-> - **children**: HTML Element'lerine sahip Dizi(Array) <br><br>
-> - **on**: Object <br> - eventName: Function(event, element)
+İkinci argüman ise bir "OBJECT"dir ve özellikler taşır. Bu özellikler ise;
+ - **attributes**:  Object <br>- Attribute ismi: Değer <br><br> 
+ - **style**: Object: <br> - styleName: Değer<br><br>
+ - **text**: String //Inner Text
+ - **html**: String //Inner HTML <br><br>
+ - **children**: HTML Element'lerine sahip Dizi(Array) <br><br>
+ - **on**: Object <br> - eventName: Function(event, element)
 <br>
+</div>
 
 ###  Kavi tarafından üretilen her eleman kendine has rastgele üretilmiş bir "id"ye sahiptir. <br>
 
