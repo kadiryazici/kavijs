@@ -22,28 +22,22 @@ Second one is Object of Options. Options can contain
 ```html
 <div data-kavi-5128416></div>
 ```
-### Style values are not added as attribute. Each element that created by Kavi keeps own style as a child, even if it is input or img.
+### Style values are not added as attribute. Kavi creates a "STYLE" element inside "HEAD".
 ```html
-<div data-kavi-5128416>
-	Hi i am created by kavi :)
+<head>
+	...
 	<style data-kavi-5128416>
 		[data-kavi-5128416] {
 			padding: 20px
 		}
 	</style>
+	...
+</head>
+<body>...</body>
+
+<div data-kavi-5128416>
+	Merhaba ben kavi tarafından oluşturuldum :)
 </div>
-
-<!-- even img/input. believe me it works. 
-because it has no children. 
-Style does not count as an element here, 
-so img/imput works as expected-->
-<img data-kavi-12345> 
-	<style data-kavi-12345>...</style>
-</img>
-
-<input data-kavi-17421 type="text" id="helloha"> 
-	<style data-kavi-17421>...</style>
-</input>
 ```
 
 
@@ -232,27 +226,22 @@ Kavi bir "class"dır, iki tane argüman alır ve geriye <ins>`HTML Elemanı`</in
 <div data-kavi-5128416></div>
 ```
 
-### Style bir attribute olarak atanmaz. Eleman kendi içinde "style" elemanı taşır. IMG ve INPUT elemanları bile buna dahildir.
+### Style bir attribute olarak atanmaz. Onun yerine "HEAD" içinde bir "STYLE" elemanı oluşturur.
 ```html
-<div data-kavi-5128416>
-	Merhaba ben kavi tarafından oluşturuldum :)
+<head>
+	...
 	<style data-kavi-5128416>
 		[data-kavi-5128416] {
 			padding: 20px
 		}
 	</style>
+	...
+</head>
+<body>...</body>
+
+<div data-kavi-5128416>
+	Merhaba ben kavi tarafından oluşturuldum :)
 </div>
-
-<!-- img/input elemanlarında bile çalışır. inan bana çalışıyor.
-Çünkü style bir eleman olarak sayılmıyor. 
-ve img/imput elemanları istendiği şekilde çalışmaya devam ediyor-->
-<img data-kavi-12345> 
-	<style data-kavi-12345>...</style>
-</img>
-
-<input data-kavi-17421 type="text" id="helloha"> 
-	<style data-kavi-17421>...</style>
-</input>
 ```
 
 
