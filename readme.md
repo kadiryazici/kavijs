@@ -36,7 +36,7 @@ Second one is Object of Options. Options can contain
 <body>...</body>
 
 <div data-kavi-5128416>
-	Merhaba ben kavi tarafından oluşturuldum :)
+	Hello i am created by kavi :)
 </div>
 ```
 
