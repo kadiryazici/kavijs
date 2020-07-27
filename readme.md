@@ -41,34 +41,34 @@ Kavi is a class that takes two arguments and returns an <ins>HTML Element</ins>.
 
 ```
 new Kavi("img", {
-            attributes: {
-                src: "http://satyr.io/300x300",
-				width: 300,
-				height: 300
-            },
-            style: {
-                boxShadow: "0px 0px 20px -5px #202020",
-				"background-color": "blue",
-				padding: "20px"
-            },
-        })
+	attributes: {
+		src: "http://satyr.io/300x300",
+		width: 300,
+		height: 300
+	},
+	style: {
+		boxShadow: "0px 0px 20px -5px #202020",
+		"background-color": "blue",
+		padding: "20px"
+	},
+})
 ```
 
 **Example: Creating a div with content**  <br>
 
 ```
 const div = new Kavi("div", {
-            attributes: {
-                id: "MyDiv",
-				class: "d-flex align-items-center"
-            },
-            style: {
-                boxShadow: "0px 0px 20px -5px #202020",
-				padding: "20px",
-				borderRadius: "20px"
-            },
-			text: "Hi, i am a div"
-        })
+	attributes: {
+		id: "MyDiv",
+		class: "d-flex align-items-center"
+	},
+	style: {
+		boxShadow: "0px 0px 20px -5px #202020",
+		padding: "20px",
+		borderRadius: "20px"
+	},
+	text: "Hi, i am a div"
+})
 
 document.body.appendChild(div)
 ```
@@ -76,61 +76,61 @@ document.body.appendChild(div)
 
 ```
 new Kavi("div", {
-            attributes: {
-                id: "MyDiv",
-				class: "d-flex align-items-center"
-            },
-            style: {
-                boxShadow: "0px 0px 20px -5px #202020",
-				padding: "20px",
-				borderRadius: "20px"
-            },
-			text: "I have child",
+	attributes: {
+		id: "MyDiv",
+		class: "d-flex align-items-center"
+	},
+	style: {
+		boxShadow: "0px 0px 20px -5px #202020",
+		padding: "20px",
+		borderRadius: "20px"
+	},
+	text: "I have child",
+	children: {
+		new Kavi('div', {
+			text: "I am the child and also a parent",
 			children: {
-				new Kavi('div', {
-					text: "I am the child and also a parent",
-					children: {
-						new KaviSmall({
-							html: "<h3>Hiiii</h3>"
-						})
-					}
+				new KaviSmall({
+					html: "<h3>Hiiii</h3>"
 				})
 			}
-			
-        })
+		})
+	}
+	
+})
 ```
 
 **Example: Element with Event that changes the color of element's itself**  <br>
 
 ```
 new KaviDiv({
-			text: "Click Me",
-            attributes: {
-                id: "MyDiv",
-				class: "d-flex align-items-center"
-            },
-            style: {
-                boxShadow: "0px 0px 20px -5px #202020",
-				padding: "20px",
-				borderRadius: "20px"
-            },
+	text: "Click Me",
+	attributes: {
+		id: "MyDiv",
+		class: "d-flex align-items-center"
+	},
+	style: {
+		boxShadow: "0px 0px 20px -5px #202020",
+		padding: "20px",
+		borderRadius: "20px"
+	},
+	on: {
+		click(event, element) {
+			element.style.color = "blue";
+			//basically element = event.target :)
+		}
+	},
+	children: {
+		new KaviButton({
+			text: "Click me i won't change the color i promise",
 			on: {
-				click(event, element) {
-					element.style.color = "blue";
-					//basically element = event.target :)
+				click(event) {
+					event.stopPropagation();
 				}
-			},
-			children: {
-				new KaviButton({
-					text: "Click me i won't change the color i promise",
-					on: {
-						click(event) {
-							event.stopPropagation();
-						}
-					}
-				})
 			}
-        })
+		})
+	}
+})
 ```
 
 ### Kavi has some predefined classes to create elements without first argument.
