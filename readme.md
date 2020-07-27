@@ -6,15 +6,17 @@ Use this library in <ins>HEAD</ins> tag.<br>
 
 Kavi is a class that takes two arguments and returns an <ins>`HTML Element`</ins>. <br>
 
->First one is HTML Element Tag as <ins>`STRING`</ins>. You can create custom elements as well.
+<kbd>
+First one is HTML Element Tag as <ins>`STRING`</ins>. You can create custom elements as well.<br><br>
+Second one is Object of Options. Options can contain
 
->Second one is Object of Options. Options can contain
-> - **attributes**:  Object <br>- Attribute name: Attribute Value <br><br> 
-> - **style**: Object: <br> - styleName: Value<br><br>
-> - **text**: String //Inner Text
-> - **html**: String //Inner HTML <br><br>
-> - **children**: Array of HTML ELements <br><br>
-> - **on**: Object <br> - eventName: Function(event, element)
+ - **attributes**:  Object <br>- Attribute name: Attribute Value <br><br> 
+ - **style**: Object: <br> - styleName: Value<br><br>
+ - **text**: String //Inner Text
+ - **html**: String //Inner HTML <br><br>
+ - **children**: Array of HTML ELements <br><br>
+ - **on**: Object <br> - eventName: Function(event, element)
+</kdb>
 
 ###  Each element created by Kavi has a randomly generated id as attribute. <br><br>
 ```html
@@ -211,18 +213,20 @@ Bu kütüphaneyi <ins>HEAD</ins> etiketinin içinde kullanın.<br>
 
 Kavi bir "class"dır, iki tane argüman alır ve geriye <ins>`HTML Elemanı`</ins> döndürür. <br>
 
-<div style="border-left: 2px solid black; border-radius:5px;padding:10px; color: #202020; background-color: rgb(200,200,200)">
-İlk eleman html etiketidir ve sadece <ins>`STRING`</ins> kabul eder. Özel etikete sahip elemanlar da oluşturabilir (\<selamlar>\</selamlar>) gibi.
+<kbd>
+  İlk eleman html etiketidir ve sadece <ins>`STRING`</ins> kabul eder. Özel etikete sahip elemanlar da oluşturabilir (\<selamlar>\</selamlar>) gibi.<br><br>
+  İkinci argüman ise bir "OBJECT"dir ve özellikler taşır. Bu özellikler ise;
 
-İkinci argüman ise bir "OBJECT"dir ve özellikler taşır. Bu özellikler ise;
  - **attributes**:  Object <br>- Attribute ismi: Değer <br><br> 
  - **style**: Object: <br> - styleName: Değer<br><br>
  - **text**: String //Inner Text
  - **html**: String //Inner HTML <br><br>
  - **children**: HTML Element'lerine sahip Dizi(Array) <br><br>
  - **on**: Object <br> - eventName: Function(event, element)
+</kbd>
+
 <br>
-</div>
+
 
 ###  Kavi tarafından üretilen her eleman kendine has rastgele üretilmiş bir "id"ye sahiptir. <br>
 
