@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./kavi.js"></script>
+</head>
+
+<body>
+    <script>
+        document.body.appendChild(
+            new KaviDiv({
+                text: "I am a Parent",
+                style: {
+                    color: "purple",
+                    padding: "30px",
+                    boxShadow: "0px 0px 7px -1px #222222",
+                    margin: "10px 30px"
+                },
+                children: [
+                    new KaviDiv({
+                        text: "I am Your Child and also a parent",
+                        style: {
+                            padding: "15px 30px"
+                        },
+                        children: [
+                            new KaviDiv({
+                                text: "I am just a child, if you click me i will type my information to console :)",
+                                style: {
+                                    padding: "15px 30px",
+                                },
+                                attributes: {
+                                    class: "iamyou"
+                                },
+                                on: {
+                                    click(event, element) {
+                                        console.log({ event, element })
+                                    },
+                                    mousemove(event, element) {
+                                        element.style.transform = `translateX(${event.clientX - 300}px)`
+                                    }
+                                }
+                            })
+                        ]
+                    })
+                ]
+            })
+        )
+
+
+        document.body.appendChild(new KaviImg({
+            attributes: {
+                src: "http://satyr.io/300x300"
+            },
+            style: {
+                boxShadow: "0px 0px 20px -5px #202020",
+                margin: "30px 0px"
+            },
+
+        }))
+
+
+        //CREATING A FORM
+        const form = new KaviForm({
+            style: {
+                padding: "20px",
+                border: "2px solid black",
+                width: "300px"
+            },
+            on: {
+                submit(event) {
+                    event.preventDefault();
+                    console.log(event.target.length);
+                }
+            },
+            attributes: {
+                action: "/asdas.php",
+                method: "get",
+                target: "_blank"
+            },
+            children: [
+                new KaviH3({
+                    text: "Login",
+                    style: {
+                        textAlign: "center",
+                        margin: "0"
+                    }
+                }),
+                new KaviLabel({
+                    text: "Username"
+                }),
+                new Kavi("br"),
+                new KaviInput({
+                    attributes: {
+                        type: "text",
+                        name: "username"
+                    },
+                    style: {
+                        backgroundColor: "red"
+                    }
+                }),
+                new Kavi("br"),
+                new Kavi("br"),
+                new KaviLabel({
+                    text: "Password"
+                }),
+                new Kavi("br"),
+                new KaviInput({
+                    attributes: {
+                        type: "password",
+                        name: "password"
+                    }
+                }),
+                new Kavi("br"),
+                new Kavi("br"),
+                new KaviInput({
+                    attributes: {
+                        type: "submit"
+                    }
+                })
+            ]
+        })
+
+        document.body.appendChild(form);
+
+    </script>
+</body>
+
+</html>
