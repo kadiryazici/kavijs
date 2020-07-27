@@ -211,7 +211,7 @@ Bu kütüphaneyi <ins>HEAD</ins> etiketinin içinde kullanın.<br>
 
 Kavi bir "class"dır, iki tane argüman alır ve geriye <ins>`HTML Elemanı`</ins> döndürür. <br>
 
-<div style="border-left: 2px solid black; border-radius:5px;padding:10px; color: #202020; background-color: rgb(200,200,200)">
+<div >
 İlk eleman html etiketidir ve sadece <ins>`STRING`</ins> kabul eder. Özel etikete sahip elemanlar da oluşturabilir (\<selamlar>\</selamlar>) gibi.
 
 İkinci argüman ise bir "OBJECT"dir ve özellikler taşır. Bu özellikler ise;
