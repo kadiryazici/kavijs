@@ -121,7 +121,7 @@ var Kavi = /*#__PURE__*/function () {
             var c = new KaviStyle({
                 html: "[data-Kavi-".concat(this.random, "] {").concat(b, "}")
             });
-            this.element.appendChild(c);
+            document.head.appendChild(c);
         }
     }, {
         key: "setText",

@@ -92,7 +92,7 @@ class Kavi {
         const styleElement = new KaviStyle({
             html: `[data-Kavi-${this.random}] {${value}}`
         })
-        this.element.appendChild(styleElement);
+        document.head.appendChild(styleElement);
     }
 
     setText(txt) {
