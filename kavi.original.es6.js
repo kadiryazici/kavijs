@@ -16,9 +16,11 @@ class Kavi {
         const on = options?.on || null;
         const children = options?.children || null;
 
-        this.random = Math.random().toString();
-        this.random = this.random.slice(this.random.length - 7, this.random.length);
-        this.element.setAttribute('data-Kavi-' + this.random, '');
+        if (this.element.tagName.toLowerCase() !== "style" && this.element.tagName.toLowerCase() !== "script") {
+            this.random = Math.random().toString();
+            this.random = this.random.slice(this.random.length - 7, this.random.length);
+            this.element.setAttribute('data-Kavi-' + this.random, '');
+        }
 
         if (attributes && typeof attributes === "object") {
             if (Array.isArray(attributes)) throw this.Error('Attributes', 'Object');

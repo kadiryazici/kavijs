@@ -44,9 +44,12 @@ var Kavi = /*#__PURE__*/function () {
         var g = (c === null || c === void 0 ? void 0 : c.html) || null;
         var h = (c === null || c === void 0 ? void 0 : c.on) || null;
         var i = (c === null || c === void 0 ? void 0 : c.children) || null;
-        this.random = Math.random().toString();
-        this.random = this.random.slice(this.random.length - 7, this.random.length);
-        this.element.setAttribute('data-Kavi-' + this.random, '');
+
+        if (this.element.tagName.toLowerCase() !== "style" && this.element.tagName.toLowerCase() !== "script") {
+            this.random = Math.random().toString();
+            this.random = this.random.slice(this.random.length - 7, this.random.length);
+            this.element.setAttribute('data-Kavi-' + this.random, '');
+        }
 
         if (d && _typeof(d) === "object") {
             if (Array.isArray(d)) throw this.Error('Attributes', 'Object'); else this.setAttributes(d);
