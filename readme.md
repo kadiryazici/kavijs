@@ -16,16 +16,16 @@ Kavi is a class that takes two arguments and returns an <ins>HTML Element</ins>.
 > - **on**: Object <br> - eventName: Function(event, element)
 
 ###  Each element created by Kavi has a randomly generated id as attribute. <br><br>
-```
+```html
 <div data-kavi-5128416></div>
 
-//even img, believe me it works.
+<!-- even img, believe me it works.-->
 <img data-kavi-12345> 
 	<style>...</style>
 </img>
 ```
 ### Style values are not added as attribute. Each element that created by Kavi keeps own style as a child, even if it is input or img.
-```
+```html
 <div data-kavi-5128416>
 	Hi i am created by kavi :)
 	<style data-kavi-5128416>
@@ -39,7 +39,7 @@ Kavi is a class that takes two arguments and returns an <ins>HTML Element</ins>.
 
  **Example: Creating an image**<br>
 
-```
+```javascript
 new Kavi("img", {
 	attributes: {
 		src: "http://satyr.io/300x300",
@@ -56,7 +56,7 @@ new Kavi("img", {
 
 **Example: Creating a div with content**  <br>
 
-```
+```javascript
 const div = new Kavi("div", {
 	attributes: {
 		id: "MyDiv",
@@ -74,7 +74,7 @@ document.body.appendChild(div)
 ```
 **Example: Creating a div with Children that has children**  <br>
 
-```
+```javascript
 new Kavi("div", {
 	attributes: {
 		id: "MyDiv",
@@ -102,7 +102,7 @@ new Kavi("div", {
 
 **Example: Element with Event that changes the color of element's itself**  <br>
 
-```
+```javascript
 new KaviDiv({
 	text: "Click Me",
 	attributes: {
