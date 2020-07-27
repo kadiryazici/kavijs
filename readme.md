@@ -30,7 +30,10 @@ Kavi is a class that takes two arguments and returns an <ins>`HTML Element`</ins
 	</style>
 </div>
 
-<!-- even img/input. believe me it works. because it has no children. Style does not count as an element here, so img/imput works as expected-->
+<!-- even img/input. believe me it works. 
+because it has no children. 
+Style does not count as an element here, 
+so img/imput works as expected-->
 <img data-kavi-12345> 
 	<style data-kavi-12345>...</style>
 </img>
