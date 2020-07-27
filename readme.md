@@ -146,7 +146,7 @@ new KaviImg({
 })
 ```
 
-## Predefined Classes. new Kavi[class name] // new KaviH3(), new KaviFooter(), new KaviImg()...
+## Predefined Classes: new Kavi[class name]\(options) 
 - A <br>
 - Article<br>
 - Div<br>
