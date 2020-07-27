@@ -134,7 +134,7 @@ new KaviDiv({
 ```
 
 ### Kavi has some predefined classes to create elements without first argument.
-```
+```javascript
 new KaviImg({
 	src: "http://satyr.io/300x300"
 })
