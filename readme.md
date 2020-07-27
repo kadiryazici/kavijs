@@ -18,11 +18,6 @@ Kavi is a class that takes two arguments and returns an <ins>HTML Element</ins>.
 ###  Each element created by Kavi has a randomly generated id as attribute. <br><br>
 ```html
 <div data-kavi-5128416></div>
-
-<!-- even img, believe me it works.-->
-<img data-kavi-12345> 
-	<style>...</style>
-</img>
 ```
 ### Style values are not added as attribute. Each element that created by Kavi keeps own style as a child, even if it is input or img.
 ```html
@@ -34,6 +29,11 @@ Kavi is a class that takes two arguments and returns an <ins>HTML Element</ins>.
 		}
 	</style>
 </div>
+
+<!-- even img, believe me it works.-->
+<img data-kavi-12345> 
+	<style>...</style>
+</img>
 ```
 
 
