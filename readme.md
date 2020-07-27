@@ -222,9 +222,11 @@ Kavi bir "class"dır, iki tane argüman alır ve geriye <ins>`HTML Elemanı`</in
 > - **on**: Object <br> - eventName: Function(event, element)
 <br>
 ###  Kavi tarafından üretilen her eleman kendine has rastgele üretilmiş bir "id"ye sahiptir. <br>
+
 ```html
 <div data-kavi-5128416></div>
 ```
+
 ### Style elemanları attribute olarak onun yerine kendi içinde "style" elemanı taşır. IMG ve INPUT elemanları bile buna dahildir.
 ```html
 <div data-kavi-5128416>
