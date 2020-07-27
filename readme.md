@@ -221,6 +221,7 @@ Kavi bir "class"dır, iki tane argüman alır ve geriye <ins>`HTML Elemanı`</in
 > - **children**: HTML Element'lerine sahip Dizi(Array) <br><br>
 > - **on**: Object <br> - eventName: Function(event, element)
 <br>
+
 ###  Kavi tarafından üretilen her eleman kendine has rastgele üretilmiş bir "id"ye sahiptir. <br>
 
 ```html
