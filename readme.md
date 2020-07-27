@@ -6,7 +6,7 @@ Use this library in <ins>HEAD</ins> tag.<br>
 
 Kavi is a class that takes two arguments and returns an <ins>`HTML Element`</ins>. <br>
 
-<kbd>
+
 First one is HTML Element Tag as <ins>`STRING`</ins>. You can create custom elements as well.<br><br>
 Second one is Object of Options. Options can contain
 
@@ -16,7 +16,7 @@ Second one is Object of Options. Options can contain
  - **html**: String //Inner HTML <br><br>
  - **children**: Array of HTML ELements <br><br>
  - **on**: Object <br> - eventName: Function(event, element)
-</kdb>
+
 
 ###  Each element created by Kavi has a randomly generated id as attribute. <br><br>
 ```html
@@ -213,7 +213,6 @@ Bu kütüphaneyi <ins>HEAD</ins> etiketinin içinde kullanın.<br>
 
 Kavi bir "class"dır, iki tane argüman alır ve geriye <ins>`HTML Elemanı`</ins> döndürür. <br>
 
-<kbd>
   İlk eleman html etiketidir ve sadece <ins>`STRING`</ins> kabul eder. Özel etikete sahip elemanlar da oluşturabilir (\<selamlar>\</selamlar>) gibi.<br><br>
   İkinci argüman ise bir "OBJECT"dir ve özellikler taşır. Bu özellikler ise;
 
@@ -223,7 +222,6 @@ Kavi bir "class"dır, iki tane argüman alır ve geriye <ins>`HTML Elemanı`</in
  - **html**: String //Inner HTML <br><br>
  - **children**: HTML Element'lerine sahip Dizi(Array) <br><br>
  - **on**: Object <br> - eventName: Function(event, element)
-</kbd>
 
 <br>
 
