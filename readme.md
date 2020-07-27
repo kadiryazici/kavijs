@@ -26,7 +26,7 @@ Second one is Object of Options. Options can contain
 ```html
 <head>
 	...
-	<style data-kavi-5128416>
+	<style>
 		[data-kavi-5128416] {
 			padding: 20px
 		}
@@ -230,7 +230,7 @@ Kavi bir "class"dır, iki tane argüman alır ve geriye <ins>`HTML Elemanı`</in
 ```html
 <head>
 	...
-	<style data-kavi-5128416>
+	<style>
 		[data-kavi-5128416] {
 			padding: 20px
 		}
